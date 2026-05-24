@@ -25,6 +25,37 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="style.css" />
+    <style>
+      #TOC {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        overflow-y: auto;
+        padding: 1em;
+        background: #f8f8f8;
+        border-right: 1px solid #ccc;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        z-index: 9999;
+      }
+      body {
+        margin-left: 270px;
+      }
+      @media (max-width: 800px) {
+        #TOC {
+          position: static;
+          width: auto;
+          height: auto;
+          box-shadow: none;
+          border-right: none;
+        }
+        body {
+          margin-left: 0;
+        }
+      }
+    </style>
+    
 </head>
 <body>
 <nav id="TOC" role="doc-toc">
